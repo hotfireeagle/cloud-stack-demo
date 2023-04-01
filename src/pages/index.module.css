@@ -23,3 +23,12 @@
   height: 38px;
   border-radius: 50%;
 }
+.mb20 {
+  margin-bottom: 30px;
+}
+.todoItem {
+  margin-bottom: 10px;
+}
+.pl0 {
+  padding-left: 0;
+}

@@ -28,6 +28,6 @@
     "**/*.tsx",
     "**/*.cjs",
     "**/*.mjs"
-  ],
+, "src/pages/index.tsx", "src/pages/index.tsx"  ],
   "exclude": ["node_modules"]
 }

@@ -17,19 +17,11 @@ model Example {
   updatedAt DateTime @updatedAt
 }
 
-model User {
-  id String @id
-  name String?
-  avatar String?
-  todos Todo[]
-}
-
 model Todo {
   id String   @id @default(cuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   content String
   status Int
-  user User @relation(fields: [userId], references: [id])
   userId String
 }
