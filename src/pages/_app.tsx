@@ -11,7 +11,7 @@ import "~/styles/globals.css";
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <ClerkProvider {...pageProps}>
-      <AuthGuard Component={Component} pageProps={pageProps} />
+      <AuthGuard Component={Component} pageProps={pageProps} router={undefined} />
     </ClerkProvider>
   );
 };

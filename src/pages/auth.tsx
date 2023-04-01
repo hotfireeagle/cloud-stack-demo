@@ -4,8 +4,9 @@ import {
   RedirectToSignIn,
   useUser
 } from "@clerk/nextjs";
+import { type AppType } from "next/app";
 
-const AuthGuard = ({ Component, pageProps }) => {
+const AuthGuard: AppType = ({ Component, pageProps }) => {
   const user = useUser();
 
   if (user.isSignedIn) {
