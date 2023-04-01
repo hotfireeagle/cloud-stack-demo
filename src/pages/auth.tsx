@@ -10,7 +10,7 @@ const AuthGuard: AppType = ({ Component, pageProps }) => {
   const user = useUser();
 
   if (user.isSignedIn) {
-    return <Component {...pageProps} />
+    return <Component {...pageProps} />;
   }
 
   return (
@@ -22,7 +22,7 @@ const AuthGuard: AppType = ({ Component, pageProps }) => {
         <RedirectToSignIn />
       </SignedOut>
     </>
-  )
+  );
 }
 
-export default AuthGuard
+export default AuthGuard;
