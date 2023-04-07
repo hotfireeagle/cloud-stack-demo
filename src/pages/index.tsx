@@ -153,6 +153,8 @@ const Home: NextPage = () => {
           <span className={styles.logo}>待办事项</span>
           <img className={styles.avatar} src={userData?.profileImageUrl} />
         </div>
+
+        <Button type="primary">已完成</Button>
         <div>
           <Search
             allowClear
